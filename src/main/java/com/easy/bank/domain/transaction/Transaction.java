@@ -20,10 +20,10 @@ public class Transaction {
     private Long id;
     private BigDecimal amount;
     @ManyToOne
-    @JoinColumn(name="sender-id")
+    @JoinColumn(name="sender_id")
     private User sender;
     @ManyToOne
-    @JoinColumn(name="receiver-id")
+    @JoinColumn(name="receiver_id")
     private User receiver;
     private LocalDateTime timestamp;
 }
